@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>MY-POKEMON-FINDES</title>
+</head>
+<body>
+
+    <header class="header">
+        <img class="logo" src="../logoPokeApi.png" alt="">
+        <nav class="menu">
+            <input type="text" class="form-control" id="name" placeholder="Nombre del Pokémon">
+            <button class="btn btn-outline-warning" type="reset" id="pokemon">BUSCAR</button>
+        </nav>
+    </header>
+
+    <section class="row">
+
+        <div class="card bg-warning bg-opacity-75" style="width: 17rem;">
+            <img class="card-img-top" src="../avatarpokemon.png" alt="imagen de la tarjeta" id="image">
+            <div class="card-body">
+              <h2 class="card-title" id="nombre"></h2>
+              <h4 class="card_error" id="error"></h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-warning bg-opacity-10">HABILIDADES</li>
+              <li class="list-group-item bg-warning bg-opacity-10" id="Habilidades"></li>
+            </ul>
+
+            <div class="card-body-ability">
+                <p>ID:</p>
+                <p class="card-link" id="id"></p>
+                <p>&emsp;PESO: </p>
+                <p class="card-link" id="peso"></p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="f1">
+                <a class="textofooter" href="">Contacto</a>
+                <a class="textofooter" href="">Facebook</a>
+                <a class="textofooter" href="">Instagram</a>
+                <a class="textofooter" href="">Twitter</a>
+                <a class="textofooter" href="">Ayuda</a>
+                <a class="textofooter" href="">Privacidad</a>
+                <a class="textofooter" href="">Configuración de cookies</a>  
+            </div>
+            <div>
+                <p class="texto2footer">© 2024 Rafael Lago for Codenotch</p>
+            </div>
+        </footer>
+
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type=module src="axios.js"></script>
+</body>
+</html>
